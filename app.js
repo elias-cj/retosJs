@@ -1,4 +1,63 @@
 
+//retos funciones
+/*Crea una función que calcule el índice de masa corporal (IMC)
+ de una persona a partir de su altura en metros 
+y peso en kilogramos, que se recibirán como parámetros.*/
+
+function calcularImc(){
+    let peso = prompt('ingrese su peso');
+    let altura = prompt('ingrese su estatura');
+    let imc = peso / (altura * altura);
+    if(imc <= 16){
+        console.log(`tu imc es de: ${imc.toFixed(2)} por lo que tu estado es de delgades(desnutricion) serera`);
+    }
+    else if (imc > 16 && imc < 17) {
+        console.log(`tu imc es de: ${imc.toFixed(2)} por lo que tu estado es de delgades(desnutricion) moderada`);
+    }
+    else if(imc >= 17 && imc < 18.5){
+        console.log(`tu imc es de: ${imc.toFixed(2)} por lo que tu estado es de delgades(desnutricion) leve`);
+    }
+    else if(imc >= 18.5 && imc < 25){
+        console.log(`tu imc es de: ${imc.toFixed(2)} por lo que tu estado es normal`);
+    }
+    else if(imc >= 25 && imc < 30){
+        console.log(`tu imc es de: ${imc.toFixed(2)} por lo que tu estado es de sobrepeso(preobesidad)`);
+    }
+    else if(imc >= 30 && imc <35){
+        console.log(`tu imc es de: ${imc.toFixed(2)} por lo que tu estado es de obesidad de grado I (leve o moderado)`);
+    }
+    else if(imc >= 35 && imc < 40){
+        console.log(`tu imc es de: ${imc.toFixed(2)} por lo que tu estado es de obesidad de grado II (severa)`);
+    }
+    else{
+        console.log(`tu imc es de: ${imc.toFixed(2)} por lo que tu estado es de obesidad de grado III (morvida)`);
+    }
+}
+calcularImc();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*let titulo = document.querySelector('h1');
 titulo.innerHTML = 'hora del desafio';
 
@@ -22,7 +81,7 @@ function suma(){
     alert(`la se suma de los 2 numeros es: ${resultado}`)
 }*/
 
-function reto1(){
+/*function reto1(){
     let nombree = document.getElementById('nombre').value;
     console.log(`hola ${nombree}`);
 }
@@ -66,6 +125,7 @@ function reto6(){
     let resultadoReto6 = numero * numero;
     console.log(resultadoReto6);
 }
+*/
 
 
 
