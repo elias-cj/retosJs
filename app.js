@@ -3,7 +3,7 @@
 /*Crea una función que calcule el índice de masa corporal (IMC)
  de una persona a partir de su altura en metros 
 y peso en kilogramos, que se recibirán como parámetros.*/
-
+/*
 function calcularImc(){
     let peso = prompt('ingrese su peso');
     let altura = prompt('ingrese su estatura');
@@ -33,11 +33,36 @@ function calcularImc(){
         console.log(`tu imc es de: ${imc.toFixed(2)} por lo que tu estado es de obesidad de grado III (morvida)`);
     }
 }
-calcularImc();
+calcularImc();*/
 
+// Se obtiene un número del usuario a través de un cuadro de diálogo emergente
+let num = prompt('Introduce un número');
 
+// Función para calcular el factorial de un número
+function factorial() {
+  // Se verifica si el número es 0 o 1, en cuyo caso se retorna 1
+  if (num === 0 || num === 1) {
+    return 1;
+  } else {
+    // Se inicializan las variables `i` e `aux`
+    let i = 1;
+    let aux = num;
 
+    // Bucle `while` que se ejecuta mientras `aux` sea mayor o igual que 1
+    while (aux >= 1) {
+      // Se multiplica la variable `i` por el valor actual de `aux`
+      i = i * aux;
+      // Se decrementa el valor de `aux` en 1
+      aux--;
+    }
+    // Se retorna el valor de la variable `i`
+    return i;
+  }
+}
+// Ejemplo de uso: se calcula y muestra el factorial del número introducido
+alert(`el factoria de ${num} es: ${factorial()}`);
 
+  
 
 
 
