@@ -34,7 +34,7 @@ function calcularImc(){
     }
 }
 calcularImc();*/
-
+/*
 // Se obtiene un número del usuario a través de un cuadro de diálogo emergente
 let num = prompt('Introduce un número');
 
@@ -61,21 +61,80 @@ function factorial() {
 }
 // Ejemplo de uso: se calcula y muestra el factorial del número introducido
 alert(`el factoria de ${num} es: ${factorial()}`);
+*/
+/************************************************************************ */  
+let lista = [];
+let lenguajesDeProgramacion = ['JavaScript','C','C++','Python'];
+lenguajesDeProgramacion.push('Java','Ruby','GoLand');
+/************************************************************************ */
 
-  
+function mostrarElementos(){
+    console.log(lenguajesDeProgramacion);
+}
+mostrarElementos();
+/************************************************************************ */
+
+function mostrarElementosInvertidos(){
+    console.log(lenguajesDeProgramacion.reverse());
+}
+mostrarElementosInvertidos();
+
+/************************************************************************ */
+function numeroPromerdio(){
+    let total = 0;
+    let promedio = [1,2,3,4,5,6];
+    for(let i = 0; i < promedio.length; i++){
+        total += promedio[i];
+    }
+    return total / promedio.length;
+}
+console.log(numeroPromerdio());
+
+/************************************************************************ */
+
+function encontrarMayorYMenor(lista) {
+    if (lista.length === 0) {
+        console.log("La lista está vacía.");
+        return;
+    }
+    let mayor = lista[0];
+    let menor = lista[0];
+    for (let i = 1; i < lista.length; i++) {
+        if (lista[i] > mayor) {
+            mayor = lista[i];
+        }
+        if (lista[i] < menor) {
+            menor = lista[i];
+        }
+    }
+    console.log("Número más grande: " + mayor);
+    console.log("Número más pequeño: " + menor);
+}
+let numeros = [34, 7, 23, 32, 5, 62, 72];
+encontrarMayorYMenor(numeros);
 
 
+/********************************************************* */
 
+function sumaArray(){
+    let suma  = 0;
+    let elementos = [1,2,3,4,5];
+    for(let i = 0; i < elementos.length; i++){
+        suma += elementos[i];
+    }
+    return suma
+}
+console.log(sumaArray());
 
+/********************************************************* */
 
-
-
-
-
-
-
-
-
+function posicionElemento(){
+    let posiscion = posElemento[0];
+    let posElemento = [1,2,3,4,5,6,4,5,4];
+    for(let i = 0; i < posElemento.length; i++){
+        
+    }
+}
 
 
 
